@@ -1,4 +1,4 @@
-FROM java:8-jdk-alpine
+FROM openjdk
 LABEL maintainer="yourname@youremail.com"
 COPY target/demo-0.0.1-SNAPSHOT.jar /demo.jar
 EXPOSE 8080

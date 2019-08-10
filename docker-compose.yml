@@ -19,9 +19,9 @@ services:
       - java_network
   obus-boot:
     container_name: obus-boot
-    image: obus-boot:latest
+    image: obushakim/demo-jenkins-boot:1.0.0
     ports:
-      - 8080:9090
+      - 9090:9090
     depends_on:
       - db
     environment:

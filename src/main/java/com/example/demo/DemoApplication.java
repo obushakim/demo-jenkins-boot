@@ -7,15 +7,22 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class DemoApplication {
+public class DemoApplication
+{
 
-	@GetMapping("/")
-	public String hello() {
-		return "Helloowwww";
-	}
+    @GetMapping("/")
+    public String hello()
+    {
+        String result;
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-	}
+        result = "Helloowwww";
+
+        return result;
+    }
+
+    public static void main(String[] args)
+    {
+        SpringApplication.run(DemoApplication.class, args);
+    }
 
 }
